@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
     (async () => {
         const browser = await puppeteer.launch({headless: false});
         const page = await browser.newPage();  
-        await page.goto("https://uk.indeed.com/jobs?q=computer+science&l=London%2C+Greater+London&sc=0kf%3Acmpsec%28NKR5F%29jt%28internship%29%3B&vjk=1637b496d83a2653");
+        await page.goto(/*Enter URL Here*/ '');
         
             const getPlacements = await page.evaluate(() => {
                 const jobs = document.querySelectorAll('.resultContent')
